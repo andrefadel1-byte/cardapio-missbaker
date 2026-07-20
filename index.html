@@ -742,7 +742,7 @@ body.view-final #finalView {
     lastPhoto[p.id] = photoSrc;
     var html = '';
     html += '<article class="product-card' + (active ? ' product-card--active' : '') + '" data-id="' + p.id + '">';
-    html += '<div class="product-card__photo"><img src="' + photoSrc + '" alt="' + p.name + '" loading="lazy" decoding="async" class="' + (photoChanged ? 'photo-fade' : '') + '"></div>';
+    html += '<div class="product-card__photo"><img src="' + photoSrc + '" alt="' + p.name + '" loading="eager" decoding="sync" class="' + (photoChanged ? 'photo-fade' : '') + '"></div>';
     html += '<div class="product-card__body">';
     html += '<h3 class="product-card__name">' + p.name + '</h3>';
     html += '<p class="product-card__desc">' + p.desc + '</p>';
