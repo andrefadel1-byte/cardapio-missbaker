@@ -8,7 +8,10 @@
 <title>Miss Baker · Cardápio interativo 2026 · monte seu pedido</title>
 <style>
 /* =========================================================================
-   Miss Baker, cardápio interativo v3.4
+   Miss Baker, cardápio interativo v3.4.1
+   v3.4.1 (16/08/2026): dois confeitos corrigidos no mapa FLAVOR_FINISH, palavra da
+   Renata na revisão do contrato do casamento (limão: granulado gourmet de chocolate
+   branco; caramelo com flor de sal: confeito de milho açucarado).
    Rodada 3 do feedback presencial da Renata (04/08/2026), 8 ajustes: foto de
    capa nova das tortas, regra de recheio e cobertura sempre do mesmo sabor,
    adicional de geleia nas tortas (cobrado à parte), sabores especiais da
@@ -1104,11 +1107,15 @@ var PHOTO_DATA = {
      (transcrição conferida, leva 3 - 04/08/2026). Chave = rótulo EXATO do chip de sabor.
      A linha de acabamento só renderiza em produtos pack (gate kind === 'pack' abaixo);
      atenção: 'Limão' e 'Oreo' da palha colidem com chaves deste mapa, é o gate que
-     impede a linha lá, não a ausência de chave. */
+     impede a linha lá, não a ausência de chave.
+     Correções 16/08/2026 (palavra da Renata, na revisão do contrato do casamento):
+     'Caramelo com flor de sal' leva confeito de milho açucarado (sucrilhos
+     caramelizado), não confeito de caramelo; 'Limão' leva granulado gourmet de
+     chocolate branco, não raspas. */
   var FLAVOR_FINISH = {
     'Ninho com Nutella': 'Brigadeiro de leite ninho com confeito de leite em pó e pitanga de Nutella.',
     'Churros': 'Brigadeiro branco com confeito de açúcar e canela e pitanga de doce de leite.',
-    'Limão': 'Brigadeiro de limão com raspas de chocolate branco.',
+    'Limão': 'Brigadeiro de limão com granulado gourmet de chocolate branco.',
     'Ferrero': 'Brigadeiro de pasta de avelã com confeito de avelã e pitanga de Nutella.',
     'Raspas de chocolate': 'Brigadeiro 50% cacau com raspas de chocolate ao leite.',
     'Nutella': 'Brigadeiro de Nutella com raspas de chocolate ao leite.',
@@ -1122,7 +1129,7 @@ var PHOTO_DATA = {
     'Doce de leite com coco': 'Brigadeiro de doce de leite com confeito de coco queimado.',
     'Prestígio': 'Brigadeiro de chocolate 50% com confeito de coco.',
     'Creme brûlée': 'Brigadeiro de baunilha com açúcar cristal maçaricado.',
-    'Caramelo com flor de sal': 'Brigadeiro de caramelo com confeito de caramelo com flor de sal.',
+    'Caramelo com flor de sal': 'Brigadeiro de caramelo com confeito de milho açucarado (sucrilhos caramelizado).',
     '100% cacau': 'Brigadeiro de chocolate 100% com raspas de chocolate meio amargo.',
     'Uva': 'Brigadeiro branco com uva verde dentro.',
     'Queijadinha': 'Brigadeiro de coco com queijo e confeito de coco.',
